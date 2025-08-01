@@ -1,0 +1,103 @@
+// index.css
+.url-shortener-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #f0f4ff, #e3ecff);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #34495e;
+  font-size: 32px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.input-section input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-section input:focus {
+  border-color: #5b8dfb;
+  outline: none;
+}
+
+.input-section button {
+  background-color: #5b8dfb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #476fce;
+}
+
+.url-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.url-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.url-info {
+  flex-grow: 1;
+}
+
+.original-url {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.short-url {
+  margin: 5px 0 0;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.url-actions button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
+}
+
+.url-actions button:hover {
+  background-color: #2980b9;
+}
